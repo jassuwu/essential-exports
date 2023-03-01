@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 // Import components
 import { Navbar, Footer } from '@/components'
-import { Landing, About, Products } from '@/components/index/index'
+import { Landing, About, Products } from '@/components/Home'
 
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
         <meta name="description" content="Essential Exports" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
+      <div className='text-primary-dark'>
         <Navbar />
         <Landing />
         <About />

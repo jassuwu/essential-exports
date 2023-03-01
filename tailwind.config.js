@@ -12,10 +12,10 @@ module.exports = {
     extend: {
       colors: {
         'dark': "#262626",
-        'light': "#EFEAEA",
+        // 'light': "#EFEAEA",
         'footer-dark': "#516566",
-        'footer-light': "#E4D8D8",
-        'primary-light': "#000000",
+        // 'footer-light': "#E4D8D8",
+        // 'primary-light': "#000000",
         'primary-dark': "#FFFFFF",
         'casper': "#9ABCBE",
       }
