@@ -27,7 +27,7 @@ module.exports = {
         'poppins': ['Poppins', 'sans-serif'],
       },
       dropShadow: {
-        'dark': "7px 8px 6px rgba(91,91,91)",
+        'dark': "7px 5px 5px rgba(91,91,91,0.8)",
       }
     },
   },
