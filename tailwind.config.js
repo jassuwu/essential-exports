@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const { fontFamily } = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -12,12 +14,20 @@ module.exports = {
     extend: {
       colors: {
         'dark': "#262626",
-        // 'light': "#EFEAEA",
+        'light': "#EFEAEA",
         'footer-dark': "#516566",
-        // 'footer-light': "#E4D8D8",
-        // 'primary-light': "#000000",
+        'footer-light': "#E4D8D8",
+        'primary-light': "#000000",
         'primary-dark': "#FFFFFF",
         'casper': "#9ABCBE",
+      },
+      fontFamily: {
+        'anybody': ['Anybody', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
+        'poppins': ['Poppins', 'sans-serif'],
+      },
+      dropShadow: {
+        'dark': "7px 8px 6px rgba(91,91,91)",
       }
     },
   },
