@@ -21,7 +21,7 @@ const About = () => {
             />
           </div>
           <div className='col-span-3 md:col-span-2 text-start my-auto'>
-            <p className='text-sm sm:text-base md:text-xl lg:text-2xl font-inter  font-light md:font-extralight pl-3 md:pl-0'>
+            <p className='text-sm sm:text-base md:text-xl lg:text-2xl font-inter  font-light md:font-extralight pl-3 md:pl-0 mt-3 md:mt-10 '>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Mauris in aliquam sem fringilla ut morbi tincidunt augue. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus.
               Odio morbi quis commodo odio
