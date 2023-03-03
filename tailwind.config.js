@@ -28,6 +28,7 @@ module.exports = {
       },
       dropShadow: {
         'dark': "7px 8px 6px rgba(91,91,91)",
+        'white': "0 0 0 rgba(255,255,255, 0.9)",
       }
     },
   },
