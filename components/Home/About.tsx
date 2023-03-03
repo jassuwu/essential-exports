@@ -4,8 +4,8 @@ const About = () => {
   return (
     <section id='About' className='relative'>
 
-      <Image src='/images/vector_top.svg' alt='Vector' width={1410} height={900}
-        className='absolute  right-0 w-[70%] -top-0 sm:-top-12  md:-top-22 xl:-top-32' />
+      {/* <Image src='/images/vector_top.svg' alt='Vector' width={1410} height={900}
+        className='absolute  right-0 w-[70%] -top-0 sm:-top-12  md:-top-22 xl:-top-32' /> */}
       <div className='px-5  md:container md:mx-auto py-20 relative'>
         <h2 className=' text-2xl md:text-4xl lg:text-5xl font-anybody'>
           Who Are We?
@@ -30,8 +30,8 @@ const About = () => {
           </div>
 
           <div>
-            <div style={{ background: "linear-gradient(189.49deg, #EFFFFE 0%, #A7B0B0 20%, rgba(0, 0, 0, 0)75%)" }}
-              className='w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] lg:w-[150px] lg:h-[150px]  xl:w-[200px] xl:h-[200px]  rounded-tl-[50%] rounded-tr-[50%] rounded-bl-[50%] rounded-br-[50%] blur-[5px] sm:blur-[20px] absolute right-0 -bottom-28 sm:-bottom-28  sm:right-20 lg:right-22 xl:right-72'>
+            <div style={{ background: "linear-gradient(189.49deg, rgba(239, 255, 254, 0.4) 0%, rgba(167, 176, 176, 0.5) 20%, rgba(0, 0, 0, 0.01)75%)" }}
+              className='w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] lg:w-[150px] lg:h-[150px]  xl:w-[200px] xl:h-[200px]  rounded-tl-[50%] rounded-tr-[50%] rounded-bl-[50%] rounded-br-[50%] blur-[5px] sm:blur-[30px] absolute right-0 -bottom-28 sm:-bottom-28  sm:right-20 lg:right-22 xl:right-72'>
             </div>
             <h2 className='text-base sm:text-2xl md:text-2xl lg:text-4xl xl:text-5xl font-anybody rotate-90 absolute -bottom-28 right-1 sm:-bottom-32 sm:right-16 xl:right-60'>
               OUR VISION
