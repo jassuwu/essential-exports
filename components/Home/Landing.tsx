@@ -7,16 +7,16 @@ const Landing = () => {
       <div id="landing-top" className="lg:flex"> 
         <div id="landing-text" className="text-white w-full">
             <div id="landing-head-text" className="w-full my-6 lg:my-12">
-              <span className="font-anybody flex justify-around lg:justify-starts text-5xl md:text-7xl lg:text-9xl">
+              <span className="font-anybody flex justify-around lg:justify-start text-5xl md:text-7xl lg:text-9xl">
                 ESSENTIAL 
               </span>
               <br/> 
-              <span className="font-anybody flex justify-around lg:justify-start font-extralight tracking-widests text-5xl md:text-7xl lg:text-9xl">
+              <span className="font-anybody flex justify-around lg:justify-start font-extralight tracking-widest text-5xl md:text-7xl lg:text-9xl">
                 exports
               </span>
             </div>
             <div id="landing-sub-text" className="text-xl text-center md:text-start sm:text-2xl md:text-3xl lg:text-4xl w-full flex justify-around lg:justify-start font-inter my-6 lg:my-12">
-              Briding the distance between
+              Bridging the distance between
               <br/>
               markets.
             </div>
@@ -41,7 +41,7 @@ const Landing = () => {
         </div>
       </div>
       </section>
-      <section id="landing-bottom" className="relative hidden md:block bottom-24 xl:bottom-36 lg:flex justify-around items-center h-[15rem] select-none overflow-hidden">
+      <section id="landing-bottom" className="relative hidden md:block bottom-24 xl:bottom-36 lg:flex justify-around items-center h-[15rem] select-none ">
         <div id="landing-bottom-text" className="xl:hidden md:block hidden  2xl:text-[24rem] xl:text-[18rem] lg:text-[14rem] text-[10rem] tracking-widest text-dark drop-shadow-white whitespace-nowrap text-center">
           EXPORT
         </div>
