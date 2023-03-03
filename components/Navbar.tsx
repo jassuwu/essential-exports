@@ -23,29 +23,34 @@ const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <nav className="flex justify-around p-8 font-poppins">
+    <nav className="lg:flex justify-around p-8 font-poppins">
       <div id="logo">
-        <Image src="/EE.svg" alt="logo" width={50} height={50} />
+        <Image
+        src="/EE.svg"
+        alt="logo"
+        width={50}
+        height={50}
+        />
       </div>
       <div id="nav-links">
-        <ul id='nav-links-ul' className='flex justify-between items-center gap-16 h-full'>
-          <li className='uppercase text-2xl relative group font-light'><a href='#'>Home</a>
+        <ul id='nav-links-ul' className='flex md:flex-col lg:flex-row justify-between items-center gap-16 h-full'>
+          <li className='uppercase text-xl  xl:text-2xl relative group font-light'><a href='#'>Home</a>
           <span className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-gray-200 group-hover:w-1/2 duration-500 group-hover:transition-all"></span>
           <span className="absolute -bottom-1 right-1/2 w-0 h-0.5 bg-gray-200 group-hover:w-1/2 duration-500 group-hover:transition-all"></span>
           </li>
-          <li className='uppercase text-2xl relative group font-light'><a href='#'>Culture</a>
+          <li className='uppercase text-xl  xl:text-2xl relative group font-light'><a href='#'>Culture</a>
           <span className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-gray-200 group-hover:w-1/2 duration-500 group-hover:transition-all"></span>
           <span className="absolute -bottom-1 right-1/2 w-0 h-0.5 bg-gray-200 group-hover:w-1/2 duration-500 group-hover:transition-all"></span>
           </li>
-          <li className='uppercase text-2xl relative group font-light'><a href='#'>Products</a>
+          <li className='uppercase text-xl  xl:text-2xl relative group font-light'><a href='#'>Products</a>
           <span className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-gray-200 group-hover:w-1/2 duration-500 group-hover:transition-all"></span>
           <span className="absolute -bottom-1 right-1/2 w-0 h-0.5 bg-gray-200 group-hover:w-1/2 duration-500 group-hover:transition-all"></span>
           </li>
-          <li className='uppercase text-2xl relative group font-light'><a href='#'>Enquiry</a>
+          <li className='uppercase text-xl  xl:text-2xl relative group font-light'><a href='#'>Enquiry</a>
           <span className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-gray-200 group-hover:w-1/2 duration-500 group-hover:transition-all"></span>
           <span className="absolute -bottom-1 right-1/2 w-0 h-0.5 bg-gray-200 group-hover:w-1/2 duration-500 group-hover:transition-all"></span>
           </li>
-          <li className='uppercase text-2xl relative group font-light'><a href='#'>Contact</a>
+          <li className='uppercase text-xl  xl:text-2xl relative group font-light'><a href='#'>Contact</a>
           <span className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-gray-200 group-hover:w-1/2 duration-500 group-hover:transition-all"></span>
           <span className="absolute -bottom-1 right-1/2 w-0 h-0.5 bg-gray-200 group-hover:w-1/2 duration-500 group-hover:transition-all"></span>
           </li>
@@ -60,15 +65,15 @@ const Navbar = () => {
         className="border border-gray-300 rounded-full px-5 h-full w-full text-xl"
         >
           <div className='flex items-center w-full h-full'>
-          🇺🇸 
+          EN
           <ExpandMoreSVG fill="#fff" height={20} width={20}/>
           </div>
         </button>
         {/* Dropdown */}
         <div className={`w-20 ${isOpen? `absolute block top-16 mt-1`: `hidden`}`}>
           <ul className="border border-white rounded-2xl w-full text-center overflow-hidden">
-            <li className='bg-dark border-b border-b-gray-400 h-full text-lg '><button onClick={(e)=> e.preventDefault()}>🇺🇸</button></li>
-            <li className='bg-dark border-b border-b-gray-400 h-full text-lg '><button onClick={(e)=> e.preventDefault()}>🇮🇳</button></li>
+            <li className='bg-dark border-b border-b-gray-400 h-full text-lg '><button onClick={(e)=> e.preventDefault()}>EN</button></li>
+            <li className='bg-dark border-b border-b-gray-400 h-full text-lg '><button onClick={(e)=> e.preventDefault()}>IN</button></li>
           </ul>
         </div>
         <button
