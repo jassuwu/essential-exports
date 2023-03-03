@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='p-6 flex justify-center'>
-        <hr className='w-4/5'></hr>
+        <hr className='w-11/12'></hr>
       </div>
     </div>
   )
