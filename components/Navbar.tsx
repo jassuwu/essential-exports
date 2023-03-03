@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Image from 'next/image'
 
 interface SVGProps {
   fill?: string;
@@ -49,7 +48,7 @@ const Navbar = () => {
       </div>
       {/* Dropdown */}
       <div id="nav-links">
-        <ul id='nav-links-ul' className={`lg:flex flex-col lg:flex-row justify-between items-end lg:items-center md:gap-12 lg:gap-16 h-full ${hamburgerOpen? `flex border border-gray-700 p-2 rounded-lg gap-8 `: `hidden `}`}>
+        <ul id='nav-links-ul' className={`lg:flex flex-col lg:flex-row justify-between items-end lg:items-center lg:gap-16 h-full lg:border-0 border border-gray-700 lg:p-0 ${hamburgerOpen? `flex p-5 px-8 rounded-lg gap-8 `: `hidden `}`}>
           <li className='uppercase text-lg  md:text-xl  xl:text-2xl relative group font-normal md:font-light'><a href='#'>Home</a>
           <span className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-gray-200 group-hover:w-1/2 duration-500 group-hover:transition-all"></span>
           <span className="absolute -bottom-1 right-1/2 w-0 h-0.5 bg-gray-200 group-hover:w-1/2 duration-500 group-hover:transition-all"></span>
@@ -73,8 +72,8 @@ const Navbar = () => {
         </ul>
       </div>
       {/* Language and Dark Mode, hidden for now. */}
-      <div id="language" className='flex gap-4 mt-8 lg:mt-0'>
-      {/* <div id="language" className='hidden'> */}
+      {/* <div id="language" className='flex gap-4 mt-8 lg:mt-0'> */}
+      <div id="language" className='hidden'>
         <button
         onClick={(e) => {
           e.preventDefault();
