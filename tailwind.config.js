@@ -20,6 +20,7 @@ module.exports = {
         'primary-light': "#000000",
         'primary-dark': "#FFFFFF",
         'casper': "#9ABCBE",
+        'grey': "#A3BABB"
       },
       fontFamily: {
         'anybody': ['Anybody', 'sans-serif'],
