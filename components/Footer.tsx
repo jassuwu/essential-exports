@@ -27,7 +27,7 @@ const Footer = () => {
             <p  className='font-light'>Diversity</p>
         </div>
         <div className='mt-8 font-inter md:w-40 text-center w-60 mx-auto'>
-          <h4 className='md:text-xl mb-3 text-center font-semibold'>Social Media</h4>
+          <h4 className='md:text-xl mb-3 font-semibold'>Social Media</h4>
           <div className='flex justify-evenly'>
             <a href="#" className='inline-block w-10 h-10'><FontAwesomeIcon icon={faInstagram} /></a>
             <a href="#" className='inline-block w-6 h-6'><FontAwesomeIcon icon={faFacebookF} /></a>
@@ -37,6 +37,10 @@ const Footer = () => {
       </div>
       <div className='p-6 flex justify-center'>
         <hr className='w-11/12'></hr>
+      </div>
+      <div className='pb-6 text-center font-inter md:text-base text-sm'>
+        <h2>Copyright © 2023 Essential Exports.</h2>
+        <h2>All rights reserved.</h2>
       </div>
     </div>
   )
