@@ -45,9 +45,7 @@ const Slideshow = () => {
         setCount(2)
       }else if(window.innerWidth<1024){
         setCount(3)
-      }
-
-      else{
+      }else{
         setCount(4)
       }
     }
