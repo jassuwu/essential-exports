@@ -38,6 +38,10 @@ const Footer = () => {
       <div className='p-6 flex justify-center'>
         <hr className='w-11/12'></hr>
       </div>
+      <div className='pb-6 text-center font-inter md:text-base text-sm'>
+        <h2>Copyright © 2023 Essential Exports.</h2>
+        <h2>All rights reserved.</h2>
+      </div>
     </div>
   )
 }
