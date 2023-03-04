@@ -1,12 +1,11 @@
 import Image from "next/image";
-
 const Landing = () => {
   return (
     <main
       id="landing-container"
-      className="h-fit md:p-10 p-8 2xl:p-0 mx-auto max-w-max relative"
+      className="h-fit md:px-10 px-8 mx-auto max-w-max relative"
     >
-      <div id="line-circle" className="absolute top-0 left-2 hidden md:block">
+      <div id="line-circle" className="absolute top-0 left-8 hidden lg:block">
         <Image
           src="/line_circle.svg"
           alt="line-circle"
@@ -19,17 +18,17 @@ const Landing = () => {
         <div id="landing-top" className="lg:flex">
           <div id="landing-text" className="text-white w-full">
             <div id="landing-head-text" className="w-full my-6 lg:my-12">
-              <span className="font-anybody flex justify-around lg:justify-start text-5xl md:text-7xl lg:text-9xl">
+              <span className="font-anybody flex justify-around lg:justify-start text-5xl lg:text-7xl xl:text-9xl">
                 ESSENTIAL
               </span>
               <br />
-              <span className="font-anybody flex justify-around lg:justify-start font-extralight tracking-widest text-5xl md:text-7xl lg:text-9xl">
+              <span className="font-anybody flex justify-around lg:justify-start font-extralight tracking-widest text-5xl lg:text-7xl xl:text-9xl">
                 exports
               </span>
             </div>
             <div
               id="landing-sub-text"
-              className="text-xl text-center md:text-start sm:text-2xl md:text-3xl lg:text-4xl w-full flex justify-around lg:justify-start font-inter my-6 lg:my-12"
+              className="text-xl text-center md:text-start md:text-2xl lg:text-3xl xl:text-4xl w-full flex justify-around lg:justify-start font-inter my-6 lg:my-12"
             >
               Bridging the distance between
               <br />
@@ -37,7 +36,7 @@ const Landing = () => {
             </div>
             <div
               id="landing-call-to-action"
-              className="flex w-full my-6 lg:my-12 justify-around lg:justify-start"
+              className="flex w-full my-6 lg:my-12 justify-around lg:justify-start  hover:cursor-pointer"
             >
               <a
                 href="#"
@@ -58,10 +57,10 @@ const Landing = () => {
           </div>
           <div
             id="landing-images"
-            className="text-white w-full z-10 lg:relative right-28 top-14 flex justify-around lg:justify-start lg:overflow-visible overflow-hidden"
+            className="text-white w-full z-10 lg:relative xl:right-28 right-16 top-14 flex justify-around lg:justify-start lg:overflow-visible overflow-hidden"
           >
             <Image
-              src="/landing.svg"
+              src="/landing.png"
               alt="landing"
               width={700}
               height={700}
@@ -72,24 +71,24 @@ const Landing = () => {
       </section>
       <section
         id="landing-bottom"
-        className="relative hidden md:block bottom-24 xl:bottom-36 lg:flex justify-around items-center h-[20rem] select-none"
+        className="relative hidden -z-10 md:block bottom-24 xl:bottom-36 lg:flex justify-around items-center h-[20rem] select-none"
       >
         <div
-          id="landing-bottom-text"
-          className="xl:hidden md:block hidden  2xl:text-[24rem] xl:text-[18rem] lg:text-[14rem] text-[10rem] tracking-widest text-dark drop-shadow-white whitespace-nowrap text-center"
+          id="landing-bottom-text-1"
+          className="xl:hidden md:block hidden  2xl:text-[24rem] lg:text-[14rem] text-[10rem] tracking-widest text-dark drop-shadow-white whitespace-nowrap text-center"
         >
           EXPORT
         </div>
         <div
-          id="landing-bottom-text"
-          className="hidden xl:block 2xl:text-[24rem] xl:text-[18rem] lg:text-[14rem] text-[10rem] tracking-widest text-dark drop-shadow-white whitespace-nowrap text-center"
+          id="landing-bottom-text-2"
+          className="hidden xl:block 2xl:text-[24rem] lg:text-[14rem] text-[10rem] tracking-widest text-dark drop-shadow-white whitespace-nowrap text-center"
         >
           EXP RT
         </div>
       </section>
       <div
         id="arrow-down"
-        className="absolute bottom-0 right-2 hidden md:block"
+        className="absolute bottom-0 right-8 hidden lg:block"
       >
         <Image
           src="/arrow_down.svg"
