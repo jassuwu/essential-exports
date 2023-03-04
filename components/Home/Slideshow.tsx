@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import { Fade } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
+
 const images = [
     "/images/1.png",
     "/images/2.png",
@@ -35,19 +36,21 @@ const props = {
 const Slideshow = () => {
   const slides:any = [];
   const len = images.length
-  const [count,setCount]=useState(4)
+  
+  const [count, setCount] = useState(4)
+  
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth<640) {
         setCount(1)
       }
-      else if(window.innerWidth<768){
+      else if(window.innerWidth<768) {
         setCount(2)
-      }else if(window.innerWidth<1024){
+      }
+      else if(window.innerWidth<1024) {
         setCount(3)
       }
-
-      else{
+      else {
         setCount(4)
       }
     }
@@ -59,16 +62,13 @@ const Slideshow = () => {
   for (let i = 0; i < len; i++) {
     let slideImages = []
     for (let j = 0; j < count; j++) {
-      
-        slideImages.push(images[(i + j)%len])
-      
+        slideImages.push(images[(i + j)%len])  
     }
     
-
     slides.push(
       <div className="flex justify-evenly items-center" key={i} id="slides">
         {slideImages.map((location, index) => (
-          <Image src={location} alt={`Image ${index}`} key={i + index} width={250} height={350} className='md:p-3 w-[60%]  sm:w-1/3 md:w-1/4 lg:w-1/5 h-auto  object-cover'/>
+          <Image src={location} alt={`Image ${index}`} key={i + index} width={250} height={350} className='md:p-3 w-[60%] sm:w-1/3 md:w-1/4 lg:w-1/5 h-auto object-cover'/>
         ))}
       </div>
     );
